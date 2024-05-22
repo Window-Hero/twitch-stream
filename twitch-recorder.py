@@ -21,12 +21,12 @@ output_folder = config['DEFAULT']['output_folder']
 
 # If the output_folder variable is not set, ask the user for input and open file explorer
 if not output_folder:
-    print('\nNow please choose the Folder location, in which all future recordings should be saved into.\nA explorer window should open up soon ...')
-    s(3)
-    root = Tk()
-    root.withdraw()
+    #print('\nNow please choose the Folder location, in which all future recordings should be saved into.\nA explorer window should open up soon ...')
+    #(3)
+    #root = Tk()
+    #root.withdraw()
     #output_folder = filedialog.askdirectory(title="Select Output Folder")
-    output_folder = input('Enter Output Folder')
+    output_folder = input('Enter Output Folder: ')
     config['DEFAULT']['output_folder'] = output_folder
     root.destroy()
 
