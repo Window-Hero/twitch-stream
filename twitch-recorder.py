@@ -28,7 +28,7 @@ if not output_folder:
     #output_folder = filedialog.askdirectory(title="Select Output Folder")
     output_folder = input('Enter Output Folder: ')
     config['DEFAULT']['output_folder'] = output_folder
-    root.destroy()
+    #root.destroy()
 
 # Save the variables to the config file
 with open(config_file_path, 'w') as configfile:
