@@ -25,7 +25,8 @@ if not output_folder:
     s(3)
     root = Tk()
     root.withdraw()
-    output_folder = filedialog.askdirectory(title="Select Output Folder")
+    #output_folder = filedialog.askdirectory(title="Select Output Folder")
+    output_folder = input('Enter Output Folder')
     config['DEFAULT']['output_folder'] = output_folder
     root.destroy()
 
